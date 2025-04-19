@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) { 
+    .inner-banner{
+        margin-top: 0;
+    }
+}

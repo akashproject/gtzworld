@@ -1,0 +1,114 @@
+.dropzone {
+    border-style: dotted;
+}
+.image-thumbnail {
+    width: 114px;
+    margin: 3px;
+    border: 1px solid #cfcfcf;
+    padding: 1px;
+    display: inline-flex;
+    position: relative;
+}
+.image-thumbnail span {
+    position: absolute;
+    bottom: 0;
+    background: #f2f2f2d9;
+    color: #333;
+    font-weight: 600;
+    width: 100%;
+    padding: 2px;
+    width: 100%;
+}
+.file-content {
+    display: inline-block;
+}
+.image-thumbnail {
+  width: 132px;
+  margin: 0.5rem;
+  border: 1px solid #cfcfcf;
+  padding: 1px;
+  display: inline-flex;
+  position: relative;
+}
+
+.image-thumbnail span {
+  position: absolute;
+  bottom: 0;
+  background: #f2f2f2d9;
+  color: #333;
+  font-weight: 600;
+  width: 100%;
+  padding: 2px;
+  width: 100%;
+}
+
+.image-profile {
+  margin: auto;
+  border: 1px solid #cfcfcf;
+  padding: 1px;
+  display: inline-block;
+  width: auto;
+}
+
+.image-thumbnail.active {
+  border: 2px solid #6e6de5;
+}
+
+.filter-container {
+  border: 2px solid #d5d5d5;
+  margin-bottom: 1rem;
+}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 22px 10px 0 10px;
+  width: auto;
+  max-width: 98%;
+  margin: 20px auto;
+  transition: 1s all;
+}
+.addLecture i {
+  font-size: 23px;
+  color: blue;
+}
+
+.removeLecture i {
+  font-size: 23px;
+  color: red;
+}
+.tag-content {
+  border: 1px solid #ccc;
+}
+.tag-content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tag-content ul li {
+  list-style: none;
+  padding: 8px;
+  background: #f1f1f1;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.tag-values {
+  background: #f1f1f1;
+  padding: 6px;
+}
+.tag-values a {
+  margin-right: 5px;
+}
+table#zero_config tr td:last-child {
+  width: 280px;
+}
+.course-content p {
+  margin: 7px 12px;
+}
+.course-content {
+  border: 1px solid #ccc;
+  padding: 5px;
+}

@@ -1,0 +1,53 @@
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
+use App\Models\Media;
+use App\Models\Products;
+use App\Models\Category;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use View;
+
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Register any application services.
+     */
+    public function register(): void
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(): void
+    {
+        //
+        Paginator::useBootstrap();
+        View::composer('*', function($view)
+        {
+            $media = Media::orderBy('created_at', 'desc')->get();
+            $view->with('media', $media);
+
+            // Get User
+            $loggedInUser = Auth::user();
+            $view->with('loggedInUser', $loggedInUser);
+
+            $headerMenu = [
+                '/about-us' => "About Us",
+                '/blog' => "Blogs",
+                '/gallery' => "Gallery",
+                '/career' => "Career",
+                '/contact-us' => "Contact Us",
+            ];
+            $view->with('headerMenu', $headerMenu);
+
+            $categories = Category::where('status',"1")->whereNull('parent_id')->get();
+            $view->with('categories', $categories);
+        });
+    }
+}
