@@ -184,6 +184,3 @@ if (! function_exists('getGalleryName')) {
     }
 }
 
-
-
-

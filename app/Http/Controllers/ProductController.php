@@ -46,4 +46,16 @@ class ProductController extends Controller
         }
     }
 
+    public function view($slug){
+        try {
+            $contentMain = Product::where('slug',$slug)->first();
+            
+            $category = Category::with('parent')->find($contentMain->category_id); // iPhone
+            $topParentId = $category->getTopLevelParentId(); // returns 1
+            $topParentCategory = Category::find($topParentId); // returns the top-level category object
+            return view('products.view',compact('contentMain','topParentCategory'));
+        } catch(\Illuminate\Database\QueryException $e){
+            dd($e);
+        }
+    }
 }
