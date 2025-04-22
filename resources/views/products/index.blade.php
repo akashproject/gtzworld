@@ -94,7 +94,7 @@
                                             <div class="course-list-img-text">
                                                 <div class="course-list-text">
                                                     <h3>
-                                                        {{ $product->name }}
+                                                        <a href="{{ route('view-product',$product->slug) }}" >{{ $product->name }}</a>
                                                     </h3>
                                                     <div class="course-meta">
                                                         <span class="course-category bold-font"><a href="#">{{ $product->description }}</a></span>

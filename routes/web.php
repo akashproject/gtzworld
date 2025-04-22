@@ -112,6 +112,7 @@ Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->wh
 Route::get('/ads/{slug}', [App\Http\Controllers\AdPageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)');
 Route::get('/category/{slug}', [App\Http\Controllers\ProductController::class, 'productListByCategory'])->name('course-category');
 Route::get('/products/{slug}', [App\Http\Controllers\ProductController::class, 'productListByCategory'])->name('view-products');
+Route::get('/product/{slug}', [App\Http\Controllers\ProductController::class, 'view'])->name('view-product');
 Route::get('/search/{slug}', [App\Http\Controllers\ProductController::class, 'search'])->name('search-products');
 Route::post('/capture-lead', [App\Http\Controllers\IndexController::class, 'captureLead'])->name('insert-lead-records');
 Route::post('/capture-contact-lead', [App\Http\Controllers\IndexController::class, 'contactCaptureLead'])->name('insert-capture-contact-leads');
