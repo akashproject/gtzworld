@@ -1444,3 +1444,43 @@ span.success-icon {
     height: 210px;
     width: 100%;
 }
+
+section.bg-listing li {
+    list-style: none;
+}
+section.bg-listing li p {
+    font-size: 18px;
+}
+.widget-panel {
+    box-shadow: 0px -1px 3px 1px #1e7fc25e;
+    border-radius: 10px;
+}
+.accordion-item {
+    margin-bottom: 5px;
+    border: none;
+
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.accordion-button {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #1e7fc2;
+}
+.accordion-body {
+    background: #fff;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.accordion-button:not(.collapsed)::after {
+    content: "-";
+    background: none;
+}
+.accordion-button::after {
+    content: "+";
+    background: none;
+}

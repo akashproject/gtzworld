@@ -67,65 +67,37 @@
 							<div class="col-sm-9">
 
 								<input type="text" class="form-control" name="slug" id="slug" placeholder="Slug Here"  value="{{ $product->slug }}" >
-
 							</div>
 
 						</div>
 
 						<div class="mb-3 row">
-
 							<label for="description" class="col-sm-3 text-right control-label col-form-label">Description</label>
-
 							<div class="col-sm-9">
-
 								<textarea class="form-control editor" name="description" id="description" placeholder="Enter description Here" >{{ $product->description }}</textarea>
-
 							</div>
-
 						</div>
-
-						
-
+						<div class="mb-3 row">
+							<label for="excerpt" class="col-sm-3 text-right control-label col-form-label">Excerpt</label>
+							<div class="col-sm-9">
+								<textarea class="form-control editor" name="excerpt" id="excerpt" placeholder="Enter excerpt Here" >{{ $product->excerpt }}</textarea>
+							</div>
+						</div>
 					</div>
 
 					<div class="col-md-5">
-
 						<div class="mb-3 row">
-
-							<label for="template" class="col-sm-3 text-right control-label col-form-label">Template</label>
-
-							<div class="col-sm-9">
-
-								<input type="text" class="form-control" name="template" id="template" placeholder="Template Here" value="{{ $product->template }}">
-
-							</div>
-
-						</div>	
-
-						<div class="mb-3 row">
-
 							<label for="state" class="col-sm-3 text-right control-label col-form-label">Enable OTP</label>
-
 							<div class="col-sm-9">
-
 								<select name="enable_otp" id="enable_otp" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
-
 									<option value="">Enable Otp</option>
-
 									<option value="1" {{ ( $product->enable_otp ==  '1' )? 'selected' : '' }}> Yes</option>
-
 									<option value="0" {{ ( $product->enable_otp ==  '0' )? 'selected' : '' }}> No </option>
-
 								<select>
-
 							</div>
-
 						</div>
-
 						<div class="mb-3 row">
-
-							<label for="state" class="col-sm-3 text-right control-label col-form-label">Status</label>
-
+							<label for="status" class="col-sm-3 text-right control-label col-form-label">Status</label>
 							<div class="col-sm-9">
 
 								<select name="status" id="status" class="select2 form-control custom-select" style="width: 100%; height:36px;">	

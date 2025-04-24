@@ -97,7 +97,7 @@
                                                         <a href="{{ route('view-product',$product->slug) }}" >{{ $product->name }}</a>
                                                     </h3>
                                                     <div class="course-meta">
-                                                        <span class="course-category bold-font"><a href="#">{{ $product->description }}</a></span>
+                                                        <span class="course-category bold-font"><a href="#">{{ $product->excerpt }}</a></span>
                                                     </div>
                                                 </div>
                                             </div>
