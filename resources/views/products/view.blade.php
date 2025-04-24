@@ -3,7 +3,7 @@
     <section id="breadcrumb" class="inner-banner relative-position backgroud-style" style="background-image: url({{ url('assets/frontend/category/'.$topParentCategory->slug.'.jpg') }});">
         <div class="container">
             <div class="row">
-                <div class="col-md-9" style="background-image: linear-gradient(to right, #040404a3, #fcfcfc00);">
+                <div class="col-md-9 py-3" style="background-image: linear-gradient(to right, #040404a3, #fcfcfc00);">
                     <div class="inner-banner-breadcrumb">
                         <span class="breadcrumbElement"> 
                             <a href="https://www.gtzworld.com/"> Home </a> 
