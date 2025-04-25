@@ -1,6 +1,10 @@
 
 /*** Spinner Start ***/
 /*** Spinner ***/
+body {
+    overflow-x: hidden;
+    color: #333;
+}
 :root {
     --bs-primary: #1e7fc2;
 }
@@ -1170,13 +1174,14 @@
 }
 .footer .footer-item a {
     line-height: 26px;
-    color: var(--bs-body);
+    color: #fff;
     transition: 0.5s;
     font-size: 14px;
 }
 
 .footer .footer-item p {
-    line-height: 35px;
+    line-height: 20px;
+    color: #fff;
 }
 
 .footer .footer-item a:hover {
@@ -1447,10 +1452,22 @@ span.success-icon {
 
 section.bg-listing li {
     list-style: none;
+    position: relative;
+    font-size: 18px;
+    color: #207fc1;
+    font-weight: 600;
 }
+
 section.bg-listing li p {
     font-size: 18px;
 }
+
+section.bg-listing li p i {
+    position: absolute;
+    left: -24px;
+    top: 8px;
+}
+
 .widget-panel {
     box-shadow: 0px -1px 3px 1px #1e7fc25e;
     border-radius: 10px;
@@ -1484,4 +1501,7 @@ section.bg-listing li p {
 .accordion-button::after {
     content: "+";
     background: none;
+}
+.table {
+    color: #181818;
 }

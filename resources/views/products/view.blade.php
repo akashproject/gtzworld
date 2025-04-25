@@ -37,7 +37,7 @@
 
     <section>
     <!-- About Start -->
-    <div class="container-fluid about bg-light py-5">
+    <div class="container-fluid about py-5">
         <div class="container ">
             <div class="row g-5">
                 <div class="col-lg-8 wow fadeInRight" data-wow-delay="0.4s">
@@ -98,7 +98,7 @@
     <!-- About End -->
     </section>
 
-    <section class="bg-listing py-3" ><!-- About Start -->
+    <section class="bg-listing bg-light py-3" ><!-- About Start -->
         <div class="container-fluid aboutpy-5">
             <div class="container ">
                 <div class="row text-center mb-5">
