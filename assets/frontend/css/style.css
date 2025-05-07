@@ -1,7 +1,11 @@
 
 /*** Spinner Start ***/
 /*** Spinner ***/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
 body {
+    font-family: 'Nunito Sans', sans-serif;
     overflow-x: hidden;
     color: #333;
 }
@@ -1504,4 +1508,22 @@ section.bg-listing li p i {
 }
 .table {
     color: #181818;
+}
+.nav-tabs {
+    border-bottom: 3px solid #dee2e6;
+}
+.nav-tabs .nav-link {
+    margin-bottom: -3px;
+}
+.nav-tabs .nav-link {
+    background: none;
+    border:none ;
+    border-bottom: 3px solid rgb(135 124 124 / 0%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.nav-tabs.style_4 .nav-item:hover .nav-link, .nav-tabs.style_4 .nav-item .nav-link.active {
+    color: #1b2336;
+    border-color: #4b83fb;
+    font-weight: 700;
 }

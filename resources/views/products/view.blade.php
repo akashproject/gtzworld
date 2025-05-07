@@ -97,7 +97,37 @@
     </div>
     <!-- About End -->
     </section>
-
+    <section class="bg-white py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="display-3 mb-4">Product Tabs</h2>
+            </div>
+            <div class="product_details mb-md-80">
+                <ul class="nav nav-tabs style_4">
+                    <li class="nav-item">
+                        <a href="#description" class="nav-link active" data-toggle="tab">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#curriculum" class="nav-link" data-toggle="tab">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link" data-toggle="tab">Reviews</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="description">
+                        Tab 1 content goes here.
+                    </div>
+                    <div class="tab-pane fade" id="curriculum">
+                        Tab 2 content goes here.
+                    </div>
+                    <div class="tab-pane fade" id="reviews">
+                        Tab 3 content goes here.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="bg-listing bg-light py-3" ><!-- About Start -->
         <div class="container-fluid aboutpy-5">
             <div class="container ">
@@ -188,7 +218,7 @@
                 </div>
         </div>
     </section>
-        @endsection
+ @endsection
 @section('script')
 <!-- ============================================================== -->
 @endsection

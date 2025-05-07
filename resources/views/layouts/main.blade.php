@@ -114,9 +114,8 @@
     <script src="{{ url('assets/frontend/lib/wow/wow.min.js') }}"></script>
 
     <script src="{{ url('assets/frontend/lib/easing/easing.min.js') }}"></script>
-
+    <script src="{{ url('assets/frontend/lib/bootstrap.bundle.min.js')}}"></script>
     <script src="{{ url('assets/frontend/lib/waypoints/waypoints.min.js') }}"></script>
-
     <script src="{{ url('assets/frontend/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
     <script src="{{ url('assets/frontend/js/jquery.magnific-popup.min.js') }}"></script>
